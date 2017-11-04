@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+		<script src="./TEST_DATA.js"> </script>
+		<script src="./cardiosurf.js"> </script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity roadway="yeah" >
+			</a-entity>
+			<a-sky color="#87ceeb"></a-sky>
+			<a-entity onpath="" position="0 0 0" >
+				<a-camera rotation="0 180 0">
+				 	<a-entity position="0.5 0.5 -1">
+					<a-entity id="status" position="0.4 -.3 -.3" text="value: ; color: black"></a-entity>
+						<a-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png" width="0.5" height="0.5">
+						<a-animation  id="heart" attribute="width"
+						               dur="100"
+						               fill="forwards"
+													 direction="alternate"
+													 from=".5"
+						               to=".45"
+													 repeat=1
+													 begin="heart0">
+												 </a-animation>
+						</a-image>
+					</a-entity>
+				</a-camera>
+			</a-entity>
+    </a-scene>
+  </body>
+</html>
+
+
+
